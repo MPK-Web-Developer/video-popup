@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- font awesome cdn  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- custom css  -->
+		<link rel="stylesheet" href="./style.css" />
+		<title>Youtube video</title>
+	</head>
+	<body>
+		<div class="conatiner">
+			<div class="content">
+				<div class="youtube-icon">
+					<i class="fa-brands fa-youtube"></i>
+				</div>
+				<br />
+				<br />
+				<button onclick="toggleButton()">Watch now</button>
+			</div>
+
+			<!-- video part  -->
+			<div class="video-fix-div">
+				<div class="close-button">
+					<span onclick="toggleButton()" id="close">Close</span>
+				</div>
+				<div class="vidoe-content">
+					<iframe
+						class="video"
+						src="https://www.youtube.com/embed/VSu97_xySeY"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
+				</div>
+			</div>
+		</div>
+		<!-- jquery  -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+			integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<!-- custom  -->
+		<script
+			language="javascript"
+			type="text/javascript"
+			src="./script.js"
+		></script>
+	</body>
+</html>
