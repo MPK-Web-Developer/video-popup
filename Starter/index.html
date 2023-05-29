@@ -17,34 +17,71 @@
 			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
 			crossorigin="anonymous"
 		></script>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<!-- CSS link -->
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
+		<div style="margin-top: 32px"></div>
 		<div class="container">
 			<div class="video-container">
 				<div class="video-content">
 					<p>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
 						deleniti aut. Ducimus fugiat iusto, veniam ullam, vitae soluta
-						consequatur officiis commodi, beatae autem totam inventore.
+						consequatur officiis commodi, beatae autem totam inventore. Lorem
+						ipsum dolor sit amet consectetur adipisicing elit. Sapiente nobis,
+						suscipit a aliquam laudantium non.
 					</p>
 				</div>
 				<div class="video-column">
-					<div class="first-video">
-						<img src="" alt="" class="video-icon" />
-						<a href=""> <img src="./miocro-mobility.jpg" alt="" /></a>
+					<div class="video first-video">
+						<button onclick="toggleButton()">
+							<img src="./youtube-image.png" alt="" class="video-icon" />
+							<img src="./miocro-mobility.jpg" alt="" />
+						</button>
 					</div>
-					<div class="second-video">
-						<img src="" alt="" class="video-icon" />
-						<a href="">
-							<img src="./Steed-Design-and-Development.jpg" alt=""
-						/></a>
+					<div class="video second-video">
+						<button onclick="toggleButton()">
+							<img src="./youtube-image.png" alt="" class="video-icon" />
+							<img src="./Steed-Design-and-Development.jpg" alt="" />
+						</button>
 					</div>
+				</div>
+			</div>
+
+			<div class="video-popup-container">
+				<div class="video-popup-close-button">
+					<span onclick="toggleButton()" id="close"
+						><img src="./video-close-button.png"
+					/></span>
+				</div>
+				<div class="video-popup-content">
+					<iframe
+						class="video-popup-iframe"
+						src="https://www.youtube.com/embed/VSu97_xySeY"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
 				</div>
 			</div>
 		</div>
 
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+			integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<!-- Script link -->
 		<script src="./script.js"></script>
 	</body>
